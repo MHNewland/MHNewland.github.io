@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\php"
+    "\\assets\\sass",
+    "\\images"
   ],
+  "SelectedNode": "\\index.html",
   "PreviewInSolutionExplorer": false
 }
