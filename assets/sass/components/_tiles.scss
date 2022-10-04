@@ -12,7 +12,7 @@
 		$ease: 'ease';
 
 		@include vendor('display', 'flex');
-		@include vendor('flex-wrap', 'wrap');
+		@include vendor('flex-wrap', 'nowrap');
 		postiion: relative;
 		margin: ($gutter * -1) 0 0 ($gutter * -1);
 

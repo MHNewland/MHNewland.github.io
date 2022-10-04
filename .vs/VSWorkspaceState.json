@@ -2,8 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\assets",
+    "\\assets\\css",
+    "\\assets\\js",
     "\\assets\\sass",
-    "\\images"
+    "\\assets\\sass\\components",
+    "\\assets\\sass\\layout"
   ],
+  "SelectedNode": "\\Current.html",
   "PreviewInSolutionExplorer": false
 }
