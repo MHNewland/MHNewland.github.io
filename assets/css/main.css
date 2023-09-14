@@ -2568,11 +2568,11 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		-moz-flex-wrap: nowrap;
-		-webkit-flex-wrap: nowrap;
-		-ms-flex-wrap: nowrap;
-		flex-wrap: nowrap;
-		postiion: relative;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2775,7 +2775,9 @@ input, select, textarea {
 
 				.tiles article {
 					width: calc(33.33333% - 1.25em);
-					margin: 1.25em 0 0 1.25em;
+					margin-left: auto;
+					margin-right: auto;
+					/*1.25em 0 0 1.25em;*/
 				}
 
 		}
