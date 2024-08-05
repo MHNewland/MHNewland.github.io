@@ -195,37 +195,43 @@
                             <ul>
                                 <li style="list-style: none;">
                                     <h4>AWS Cloud Deployment</h4>
-                                    <details>
-                                        <summary>Final Project</summary>
-                                        <details>
-                                            <summary>Requirements</summary>
-                                            <ul>
-                                                <li>Have MFA on the root account.</li>
-                                                <li>Have a publicly-accessible site link.</li>
-                                                <li>Draw a diagram of your full cloud deployment</li>
-                                                <li>Prove the network connection from the public VM can reach both the private VM and the internet. Prove the private VM cannot connect to the internet.</li>
-                                                <li>Create an alarm for your private VM</li>
-                                                <li>Estimate the annual cost of your deployment</li>
-                                                <li>Describe your cloud configuration</li>
-                                            </ul>
-                                        </details>
-                                        <div class="contentImg">
-                                            <img class="thumb" id="AWSDeploy" onclick="OpenModal('AWSDeploy')" 
-                                                alt="AWS Deployment diagram" 
-                                                title="AWS Deployment diagram"
-                                                src="images/Cloud-Deployment.png">
-                                            <img class="thumb" id="CloudFeedback" onclick="OpenModal('CloudFeedback')" 
-                                                alt="Feedback on project Presentation" 
-                                                title="Feedback on project Presentation"
-                                                src="images/Cloud-Feedback.png">
-                                            <img class="thumb" onclick="OpenModalVideo('CloudPresentation')" 
-                                                alt="Cloud deployment presentation."
-                                                title="Cloud deployment presentation."
-                                                src="images/Cloud-Presentation-Thumbnail.png">
-                                            <embed height="0" width="0" src="https://www.youtube.com/embed/8bE-F9wibyw" id="CloudPresentation">                               
-                                                
-                                        </div>
-                                    </details>
+                                    <ul>
+                                        <li style="list-style: none;">
+                                            <div class="contentDesc">
+                                                <details>
+                                                    <summary>Final Project</summary>
+                                                    <details>
+                                                        <summary>Requirements</summary>
+                                                        <ul>
+                                                            <li>Have MFA on the root account.</li>
+                                                            <li>Have a publicly-accessible site link.</li>
+                                                            <li>Draw a diagram of your full cloud deployment</li>
+                                                            <li>Prove the network connection from the public VM can reach both the private VM and the internet. Prove the private VM cannot connect to the internet.</li>
+                                                            <li>Create an alarm for your private VM</li>
+                                                            <li>Estimate the annual cost of your deployment</li>
+                                                            <li>Describe your cloud configuration</li>
+                                                        </ul>
+                                                    </details>
+                                                    <div class="contentImg">
+                                                        <img class="thumb" id="AWSDeploy" onclick="OpenModal('AWSDeploy')" 
+                                                            alt="AWS Deployment diagram" 
+                                                            title="AWS Deployment diagram"
+                                                            src="images/Cloud-Deployment.png">
+                                                        <img class="thumb" id="CloudFeedback" onclick="OpenModal('CloudFeedback')" 
+                                                            alt="Feedback on project Presentation" 
+                                                            title="Feedback on project Presentation"
+                                                            src="images/Cloud-Feedback.png">
+                                                        <img class="thumb" onclick="OpenModalVideo('CloudPresentation')" 
+                                                            alt="Cloud deployment presentation."
+                                                            title="Cloud deployment presentation."
+                                                            src="images/Cloud-Presentation-Thumbnail.png">
+                                                        <embed height="0" width="0" src="https://www.youtube.com/embed/8bE-F9wibyw" id="CloudPresentation">                               
+                                                            
+                                                    </div>
+                                                </details>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </li>
@@ -239,107 +245,110 @@
                             </div>
                             <ul>
                                 <li style="list-style: none;">
-                                    <h4>Database Schema</h4>  
-                                    <details>
-                                        <summary>Final Group Project</summary>
-                                        <details>
-                                            <summary>Requirements</summary>
-                                            <p>We were given the following scenario and needed to design and build a database based on the business requirements.</p>
-                                            <details>
-                                                <summary>Scenario</summary>
-                                                <p>
-                                                    After building a successful Real Estate Investment business your parents decide it's time to retire and have asked you to 
-                                                    take over the family business.  You weren't sure if you were ready to leave your lucrative career as a Database Administrator 
-                                                    but after careful deliberation, you've agreed to take over. You realize that the business was not functioning at its most optimal
-                                                    level, as several staff members are still using the primitive file and cabinet method to maintain records. After a thorough 
-                                                    evaluation, you've decided to apply the knowledge you've acquired as a DBA to improve the day-to-day operations of your 
-                                                    family-owned business. In doing so, you recruit a couple of your IT friends to assist with designing a new application.
-                                                </p>
-                                            </details>
-                                            <details>
-                                                <summary>Business Requirements</summary>
-                                                <ul>
-                                                    <li>
-                                                        <p>
-                                                            Your new application will support all business operations; this includes maintaining records of buyers, properties acquired, 
-                                                            contractors, sales agents, agreements, and employees.  Over the years there have been thousands of properties acquired and sold. 
-                                                            Staff members have worked with a number of contractors consisting of Interior Designers and General Contractors.  Your business 
-                                                            also employs five employees (an accountant, a lawyer, a secretary, and two maintenance workers). In addition, over the years 
-                                                            your parents have worked with several independent Real Estate Sales Agents.
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            Your database should contain details from previous and potential buyers including account number, name, address, contact info, 
-                                                            occupation, salary, and credit score.
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            You also need to maintain Employee details employer code, employer name, employer address, employer phone number, etc...
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            It should also contain data for contractors such as id, name, address, and phone number. In addition, you also need to include the 
-                                                            sales agent's id, name, address, and phone number.
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            You also should maintain data for contract agreements between various contractors and your company.  These agreements should include 
-                                                            an agreement number, contractor id, contractor name, contractor address, contractor phone number, and a description of the agreement.
-                                                        </p>
-                                                        <ul>
-                                                            <li>
-                                                                <p>
-                                                                    A contractor can enter into several agreements, but each agreement can only be associated with one contractor. 
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <p>
-                                                            Lastly, the database schema should contain all the properties acquired and sold, each property should have a parcel number, address, 
-                                                            and specification such as the number of rooms, square feet, purchase date, purchase amount, market value, and architecture style 
-                                                            description. The architectural styles include Cope Code, Colonial Contemporary, Ranch and etc… For the architecture style description, 
-                                                            you need to store information such as the style and description of each style to provide additional characteristics for each property.
-                                                        </p>
-                                                        <ul>
-                                                            <li>
-                                                                <p>
-                                                                    The property should also be associated with details for both the buyer and sales agent (id, name, address, phone).
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p>
-                                                                    You've also noted that a buyer can purchase one or more properties from you and the property can have one or more buyers.
-                                                                </p>
-                                                            </li>
-                                                            <li>
-                                                                <p>
-                                                                    The sale of a property can be conducted by one agent, but an agent can sell many properties.
-                                                                </p>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </details>
-                                        </details>
-                                        <img class="thumb" id="DBMSTables" onclick="OpenModal('DBMSTables')" 
-                                                alt="Table design for DBMS110 final project"
-                                                title="Table design for DBMS110 final project"
-                                                src="images/DBMS-Tables.png">
-                                        <details>
-                                            <summary>MySQL code</summary>
-                                            
-                                            <!-- HTML generated using hilite.me -->
-                                            <div class="SQL-Block">
+                                    <h4>Database Schema</h4>
+                                    <ul>
+                                        <li style="list-style: none;">
+                                            <div class="contentDesc">  
                                                 <details>
-                                                    <summary>
-                                                        <span style="color: #008800; font-weight: bold">CREATE</span> <span style="color: #008800; font-weight: bold">TABLE</span> buyers
-                                                    </summary>
-                                                    <pre class="SQL">
+                                                    <summary>Final Group Project</summary>
+                                                    <details>
+                                                        <summary>Requirements</summary>
+                                                        <p>We were given the following scenario and needed to design and build a database based on the business requirements.</p>
+                                                        <details>
+                                                            <summary>Scenario</summary>
+                                                            <p>
+                                                                After building a successful Real Estate Investment business your parents decide it's time to retire and have asked you to 
+                                                                take over the family business.  You weren't sure if you were ready to leave your lucrative career as a Database Administrator 
+                                                                but after careful deliberation, you've agreed to take over. You realize that the business was not functioning at its most optimal
+                                                                level, as several staff members are still using the primitive file and cabinet method to maintain records. After a thorough 
+                                                                evaluation, you've decided to apply the knowledge you've acquired as a DBA to improve the day-to-day operations of your 
+                                                                family-owned business. In doing so, you recruit a couple of your IT friends to assist with designing a new application.
+                                                            </p>
+                                                        </details>
+                                                        <details>
+                                                            <summary>Business Requirements</summary>
+                                                            <ul>
+                                                                <li>
+                                                                    <p>
+                                                                        Your new application will support all business operations; this includes maintaining records of buyers, properties acquired, 
+                                                                        contractors, sales agents, agreements, and employees.  Over the years there have been thousands of properties acquired and sold. 
+                                                                        Staff members have worked with a number of contractors consisting of Interior Designers and General Contractors.  Your business 
+                                                                        also employs five employees (an accountant, a lawyer, a secretary, and two maintenance workers). In addition, over the years 
+                                                                        your parents have worked with several independent Real Estate Sales Agents.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>
+                                                                        Your database should contain details from previous and potential buyers including account number, name, address, contact info, 
+                                                                        occupation, salary, and credit score.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>
+                                                                        You also need to maintain Employee details employer code, employer name, employer address, employer phone number, etc...
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>
+                                                                        It should also contain data for contractors such as id, name, address, and phone number. In addition, you also need to include the 
+                                                                        sales agent's id, name, address, and phone number.
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>
+                                                                        You also should maintain data for contract agreements between various contractors and your company.  These agreements should include 
+                                                                        an agreement number, contractor id, contractor name, contractor address, contractor phone number, and a description of the agreement.
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p>
+                                                                                A contractor can enter into several agreements, but each agreement can only be associated with one contractor. 
+                                                                            </p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li>
+                                                                    <p>
+                                                                        Lastly, the database schema should contain all the properties acquired and sold, each property should have a parcel number, address, 
+                                                                        and specification such as the number of rooms, square feet, purchase date, purchase amount, market value, and architecture style 
+                                                                        description. The architectural styles include Cope Code, Colonial Contemporary, Ranch and etc… For the architecture style description, 
+                                                                        you need to store information such as the style and description of each style to provide additional characteristics for each property.
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <p>
+                                                                                The property should also be associated with details for both the buyer and sales agent (id, name, address, phone).
+                                                                            </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>
+                                                                                You've also noted that a buyer can purchase one or more properties from you and the property can have one or more buyers.
+                                                                            </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>
+                                                                                The sale of a property can be conducted by one agent, but an agent can sell many properties.
+                                                                            </p>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </details>
+                                                    </details>
+                                                    <img class="thumb" id="DBMSTables" onclick="OpenModal('DBMSTables')" 
+                                                            alt="Table design for DBMS110 final project"
+                                                            title="Table design for DBMS110 final project"
+                                                            src="images/DBMS-Tables.png">
+                                                    <details>
+                                                        <summary>MySQL code</summary>
+                                                        
+                                                        <!-- HTML generated using hilite.me -->
+                                                        <div class="SQL-Block">
+                                                            <details>
+                                                                <summary>
+                                                                    <span style="color: #008800; font-weight: bold">CREATE</span> <span style="color: #008800; font-weight: bold">TABLE</span> buyers
+                                                                </summary>
+                                                                <pre class="SQL">
 (        
     buy_account_number <span style="color: #0066BB; font-weight: bold">NUMBER</span>(<span style="color: #0000DD; font-weight: bold">6</span>),
     buy_name <span style="color: #0066BB; font-weight: bold">VARCHAR2</span>(<span style="color: #0000DD; font-weight: bold">50</span>),
@@ -459,11 +468,14 @@
     emp_access_level <span style="color: #0066BB; font-weight: bold">NUMBER</span>(<span style="color: #0000DD; font-weight: bold">5</span>),
     <span style="color: #008800; font-weight: bold">PRIMARY</span> <span style="color: #008800; font-weight: bold">KEY</span> (emp_id)
 );
-                                                    </pre>
+                                                                </pre>
+                                                            </details>
+                                                        </div>
+                                                    </details>
                                                 </details>
                                             </div>
-                                        </details>
-                                    </details>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>  
                         </li>  
