@@ -1,151 +1,184 @@
-﻿<!DOCTYPE HTML>
-<!--
-    Phantom by HTML5 UP
-    html5up.net | @ajlkn
-    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE HTML>
+<html lang="en">
 <head>
-    <title>Achievements - Matthew Newland's Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Achievements for Matthew Newland, aspiring video game developer, including Python PCAP certification, game development badges, and data analysis certificates.">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Odibee+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73e475da2b.js" crossorigin="anonymous"></script>
+    <title>Matthew Newland - Achievements</title>
 </head>
-<body class="is-preload">
-    <!-- Wrapper -->
+<body>
+
+    <!-- Menu -->
+    <div class="menu">
+        <input type="checkbox" class="openMenu" id="openMenu">
+        <ul class="menuInner">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="GameDevelopment/GameDevelopment.html">Game Development</a></li>
+            <li><a href="DataAnalysis.html">Data Analysis</a></li>
+            <li><a href="CollegeProjects.html">College Projects</a></li>
+        </ul>
+        <label for="openMenu" class="menuIconToggle">
+            <i class="arrow-background">
+                <i class="arrow"></i>
+            </i>
+        </label>
+    </div>    
     <div id="wrapper">
-
-        <!-- Header -->
-        <header id="header">
-            <div class="inner">
-
-                <!-- Logo -->
-                <a href="index.html" class="logo">
-                    <span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-                </a>
-
-                <!-- Nav -->
-                <nav>
-                    <ul>
-                        <li><a href="#menu">Menu</a></li>
-                    </ul>
-                </nav>
-
-            </div>
-        </header>
-
-        <!-- Menu -->
-		<nav id="menu">
-			<h2>Menu</h2>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="AboutMe.html">About Me</a></li>
-				<li><a href="Achievements.html">Achievements</a></li>
-				<li><a href="Unity.html">Unity Projects</a></li>
-				<li><a href="Python.html">Python Projects</a></li>
-				<li><a href="Current.html">In Progress</a></li>
-			</ul>
-		</nav>
-
         <!-- Main -->
         <div id="main">
             <div class="inner">
-                <h1>Achievements</h1>
-                <span class="image main"><img src="images/sunshine background.jpg" alt="" /></span>
-                <h2>Certification</h2>
-                <ul>
-                    <li>
-                        Certified Associate in Python Programming
-                        </br>
-                        <a href="https://www.credly.com/badges/34e52dc2-0f25-49a0-a8af-363b78024f8e/public_url">
-                            <img src="images/pcap-31-03-pcap-certified-associate-in-python-programming.png" width="200" />
-                        </a>
-                    </li> 
-                </ul>
-                <h2>Code Louisville</h2>
-                <ul>                   
-                    <li>
-                        Code Louisville Data Analytics course, session 1 and 2.
-                        <br>
-                        <img src="images/codelou-in-cert-dac1-jan2023-MATTHEW_NEWLAND.jpg" width="35%" />
-                        <img src="images/codelou-cert-data-c2-may2023-MATTHEW_NEWLAND.jpg" width="35%"/>
-                    </li>
-                </ul>
-                <h2>Game Development</h2>
-                <ul>
-                    <li>
-                        <a href="https://www.credly.com/badges/b2d34c9d-c60f-45b6-a011-396ca5e3831c/public_url">
-                            <img src="images/Unity_Essentials-Pathway_Badge.png" width="30" />
-                            Unity Essentials Pathway badge
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.credly.com/badges/ae9d5bc9-7420-4b4f-8d4d-0f9bef1322b5/public_url">
-                            <img src="images/Unity_Junior_Programmer_Pathway.png" width="30" />
-                            Unity Junior Programmer badge
-                        </a>
-                    </li>   
-                    <li>
-                        GameDev.TV 2D course completion
-                        <br>
-                        <img src="images/GameDev-TV-2Dpng.png" width="35%" />
-                    </li>                                     
-                </ul>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img src="data:," class="modal-content" id="modal-image-blank" alt="Container for modal image.">
+                    <div id="caption"></div>
+                </div>
+                <div class="content">
+                    <h1>Achievements</h1>
+                    <h2 id="Certifications">Certifications</h2>
+                    <ul class="ul-wrap">
+                        <li>
+                            <div class="contentTitle">
+                                <a title="View Credly badge" href="https://www.credly.com/badges/34e52dc2-0f25-49a0-a8af-363b78024f8e/public_url">
+                                    Certified Associate in Python Programming
+                                </a>
+                            </div>
+                            <div class="contentImg">
+                                <img class="thumb" id="PCAP" onclick="OpenModal('PCAP')" 
+                                alt="Certified Associate in Python Programming Certification issued by Open EDG" 
+                                title="PCAP Certification badge"
+                                src="images/pcap-31-03-pcap-certified-associate-in-python-programming.png">
+                            </div>
+                        </li> 
+                    </ul>
+                    <a title="View Game Development examples" href="GameDevelopment/GameDevelopment.html"><h2 id="GameDev">Game Development</h2></a>
+                    <ul class="ul-wrap">
+                        <li> 
+                            <div class="contentTitle">
+                                <a title="View Credly badge" href="https://www.credly.com/badges/b2d34c9d-c60f-45b6-a011-396ca5e3831c/public_url">    
+                                    Unity Essentials Pathway badge
+                                </a>
+                            </div>
+                            <div class="contentImg">
+                                <img class="thumb" id="UEP" onclick="OpenModal('UEP')" 
+                                    alt="https://learn.unity.com Unity Essentials Pathway badge"
+                                    title="Unity Essentials Pathway badge"
+                                    src="images/Unity_Essentials-Pathway_Badge.png" height="180">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentTitle">
+                                <a title="View Credly badge" href="https://www.credly.com/badges/ae9d5bc9-7420-4b4f-8d4d-0f9bef1322b5/public_url">
+                                    Unity Junior Programmer badge
+                                </a>
+                            </div>
+                            <div class="contentImg">
+                                <img class="thumb" id="UJP" onclick="OpenModal('UJP')" 
+                                    alt="https://learn.unity.com Unity Junior Programmer badge" 
+                                    title="Unity Junior Programmer badge"
+                                    src="images/Unity_Junior_Programmer_Pathway.png" height="180">
+                            </div>
+                        </li>   
+                        <li>
+                            <div class="contentTitle">
+                                <p>GameDev.TV 2D course completion</p>
+                            </div>
+                            <div class="contentImg">
+                                <img class="thumb" id="GDTV2D" style="width:230px" onclick="OpenModal('GDTV2D')" 
+                                    alt="GameDev.tv Unity 2D Game Development certificate" 
+                                    title="Unity 2D Game Development certificate"
+                                    src="images/GameDev-TV-2Dpng.png">
+                            </div>
+                        </li>                                     
+                    </ul>                    
+                    <a title="View Data Analysis examples" href="DataAnalysis.html"><h2 id="DataAnalysis">Data Analysis</h2></a>
+                    <ul class="ul-wrap">                   
+                        <li>
+                            <div class="contentTitle">
+                                <p>Code Louisville Data Analytics course, session 1 and 2.</p>
+                            </div>
+                            <div class="contentImg">
+                                <img class="thumb"  id="CL1" onclick="OpenModal('CL1')" 
+                                    alt="Code Louisville Data Analysis Course 1 Certificate" 
+                                    title="C.L. Data Analysis Course 1"
+                                    src="images/codelou-in-cert-dac1-jan2023-MATTHEW_NEWLAND.jpg" >
+
+                                <img class="thumb" id="CL2" onclick="OpenModal('CL2')" 
+                                    alt="Code Louisville Data Analysis Course 2 Certificate" 
+                                    title="C.L. Data Analysis Course 2"
+                                    src="images/codelou-cert-data-c2-may2023-MATTHEW_NEWLAND.jpg" >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
         <!-- Footer -->
         <footer id="footer">
             <div class="inner">
-                <section>
-                    <h2>Get in touch</h2>
+                <div class="section">
                     <form method="post" action="https://formspree.io/f/xrgjakvb">
+                        <h2>Let's get in touch</h2>
                         <div class="fields">
-                            <div class="field half">
-                                <input type="text" name="name" id="name" placeholder="Name" />
+                            <div class="field">
+                                <input type="text" name="name" id="name" placeholder="Name" >
                             </div>
-                            <div class="field half">
-                                <input type="email" name="email" id="email" placeholder="Email" />
+                            <div class="field">
+                                <input type="email" name="email" id="email" placeholder="Email" >
                             </div>
                             <div class="field">
                                 <textarea name="message" id="message" placeholder="Message"></textarea>
                             </div>
                         </div>
-                        <ul class="actions">
-                            <li><input type="submit" value="Send" class="primary" /></li>
-                        </ul>
+                        <input type="submit" value="Send" class="form-button" >
                     </form>
-                </section>
-                <section>
-                    <h2>Follow</h2>
-                    <ul class="icons">
-                        <li><a href="https://www.facebook.com/matthew.h.newland" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="https://www.linkedin.com/in/matthew-h-newland/" class="icon brands style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                    </ul>
-                    <ul class="icons">
-                        <li><a href="https://github.com/MHNewland" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-                        <li><a href="https://play.unity.com/u/Amorindis" class="icon brands style2 fa-unity"><span class="label">Unity</span></a></li>
-                    </ul>
-                    <ul class="icons">
-                        <li><a href="tel:502-689-4396" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-                        <li><a href="mailto:matt.nwl@hotmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-                    </ul>
-                </section>
-                <ul class="copyright">
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a> - Phantom</li>
-                </ul>
+                </div>
+                <div class="section">
+                    <table id="contact-icons">
+                        <tr>
+                            <th>Social Media:</th>
+                            <td><a target="_blank" href="https://www.facebook.com/matthew.h.newland" class="fa-brands fa-facebook-square fa-2x"><span class="label">Facebook</span></a></td>
+                            <td><a target="_blank" href="https://www.linkedin.com/in/matthew-h-newland/" class="fa-brands fa-linkedin fa-2x"><span class="label">LinkedIn</span></a></td>
+                        </tr>
+                        <tr>
+                            <th>Code examples:</th>
+                            <td><a target="_blank" href="https://github.com/MHNewland" class="fa-brands fa-github fa-2x"><span class="label">GitHub</span></a></td>
+                            <td><a target="_blank" href="https://play.unity.com/u/Amorindis" class="fa-brands fa-unity fa-2x"><span class="label">Unity</span></a></td>
+
+                        </tr>
+                        <tr>
+                            <th>Contact me:</th>
+                            <td><a target="_blank" href="tel:502-689-4396" class="fa-solid fa-phone fa-2x"><span class="label">Phone</span></a></td>
+                            <td><a target="_blank" href="mailto:matt.nwl@hotmail.com" class="fa-solid fa-envelope fa-2x"><span class="label">Email</span></a></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </footer>
-
     </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modal-image-blank");
+        var captionText = document.getElementById("caption");
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+        function OpenModal(srcImg){
+        img = document.getElementById(srcImg);
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+        }
 
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Data Analysis example projects for Matthew Newland, aspiring video game developer">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Odibee+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/73e475da2b.js" crossorigin="anonymous"></script>
+    <title>Matthew Newland - Data Analysis</title>
+</head>
+<body>
+
+    <!-- Menu -->
+    <div class="menu">
+        <input type="checkbox" class="openMenu" id="openMenu">
+        <ul class="menuInner">
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AboutMe.html">About Me</a></li>
+            <li><a href="Achievements.html">Achievements</a></li>
+            <li><a href="GameDevelopment/GameDevelopment.html">Game Development</a></li>
+            <li><a href="DataAnalysis.html">Data Analysis</a></li>
+            <li><a href="CollegeProjects.html">College Projects</a></li>
+        </ul>
+        <label for="openMenu" class="menuIconToggle">
+            <i class="arrow-background">
+                <i class="arrow"></i>
+            </i>
+        </label>
+    </div>    
+    <div id="wrapper">
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img src="data:," class="modal-content" id="modal-image-blank" alt="Container for modal image.">
+                    <div id="caption"></div>    
+                </div>
+                <div class="content">
+                    <a title="View Data Analysis achievements" href="Achievements.html#DataAnalysis"><h1>Data Analysis</h1></a>
+                    <h2><a title="View github repository" href="https://github.com/MHNewland/TicketGraph">TicketGraph</a></h2>
+                    <div class="contentDesc">
+                        <p>This app was built as the final project of Code Louisville's Data Analytics course, session 1. I created it to be able to view trend data at my workplace for each team. I was put in charge of building a report to show the number of tickets each team has and information about those tickets. The original reports were created using Excel.</p>
+                    </div>
+                    <div class="contentImg">
+                        <img class="thumb" id="TGblank" onclick="OpenModal('TGblank')" 
+                            alt="Main screen of TicketGraph app with no options selected."
+                            title="TicketGraph main screen."
+                            src="images/Ticket-data-blank.png" >
+                        <img class="thumb" id="TG3" onclick="OpenModal('TG3')" 
+                            alt="TicketGraph app with 3 teams selected." 
+                            title="TicketGraph app with 3 teams selected."
+                            src="images/ticket-data-rank-and-graph.png" >
+                    </div>
+                    <h2><a title="View github repository" href="https://github.com/MHNewland/AnimeList">AnimeList</a></h2>
+                    <div class="contentDesc">
+                        <p>This was the final project of Code Louisville's Data Analytics course, session 2. I set it up to be able to display a table about Anime scraped from <a title="Anichart.net" href="https://anichart.net/"><i>AniChart</i></a> and <a title="MyAnimeList.net" href="https://myanimelist.net/"><i>MyAnimeList</i></a>, as well as chart a graph to show how many titles were released by year and season.</p>
+                        <p>To view the app, you can visit <a title="View AnimeList app."  href="https://clda2-animelist.streamlit.app/">https://clda2-animelist.streamlit.app/</a>.</p>
+                    </div>
+                    <div class="contentImg">
+                        <img class="thumb" id="ALblank" onclick="OpenModal('ALblank')"
+                            alt="AnimeList filters with default selection." 
+                            title="AnimeList filters with default selection."
+                            src="images/AnimeList-blank.png">
+                        <img class="thumb" id="ALfilters" onclick="OpenModal('ALfilters')" 
+                            alt="AnimeList filters with example data selected." 
+                            title="AnimeList filters with example data selected."
+                            src="images/AnimeList-Filters.png" >
+                        <img class="thumb" id="ALgraph" onclick="OpenModal('ALgraph')"
+                            alt="AnimeList graph of selected data." 
+                            title="AnimeList graph of selected data."
+                            src="images/AnimeList-Graph.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="section">
+                    <form method="post" action="https://formspree.io/f/xrgjakvb">
+                        <h2>Let's get in touch</h2>
+                        <div class="fields">
+                            <div class="field">
+                                <input type="text" name="name" id="name" placeholder="Name" >
+                            </div>
+                            <div class="field">
+                                <input type="email" name="email" id="email" placeholder="Email" >
+                            </div>
+                            <div class="field">
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Send" class="form-button" >
+                    </form>
+                </div>
+                <div class="section">
+                    <table id="contact-icons">
+                        <tr>
+                            <th>Social Media:</th>
+                            <td><a target="_blank" href="https://www.facebook.com/matthew.h.newland" class="fa-brands fa-facebook-square fa-2x"><span class="label">Facebook</span></a></td>
+                            <td><a target="_blank" href="https://www.linkedin.com/in/matthew-h-newland/" class="fa-brands fa-linkedin fa-2x"><span class="label">LinkedIn</span></a></td>
+                        </tr>
+                        <tr>
+                            <th>Code examples:</th>
+                            <td><a target="_blank" href="https://github.com/MHNewland" class="fa-brands fa-github fa-2x"><span class="label">GitHub</span></a></td>
+                            <td><a target="_blank" href="https://play.unity.com/u/Amorindis" class="fa-brands fa-unity fa-2x"><span class="label">Unity</span></a></td>
+
+                        </tr>
+                        <tr>
+                            <th>Contact me:</th>
+                            <td><a target="_blank" href="tel:502-689-4396" class="fa-solid fa-phone fa-2x"><span class="label">Phone</span></a></td>
+                            <td><a target="_blank" href="mailto:matt.nwl@hotmail.com" class="fa-solid fa-envelope fa-2x"><span class="label">Email</span></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modal-image-blank");
+        var captionText = document.getElementById("caption");
+
+        function OpenModal(srcImg){
+        img = document.getElementById(srcImg);
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+
+        span.onclick = function() { 
+        modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
