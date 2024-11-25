@@ -183,10 +183,6 @@ pre{
     font-size: .75em;
 }
 
-.cat1:h2{
-    vertical-align:middle;
-}
-
 a:visited .cat1{
     background: #2B4B8B;
 }
@@ -214,6 +210,7 @@ a:visited .cat1 h2{
 .cat1 .button h2{
     color: #242a24;
     text-align: center;
+    vertical-align: middle;
 }
 
 .close {
