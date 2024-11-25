@@ -181,6 +181,7 @@ pre{
     background:#3AEA3A;
     border-radius:10px;
     font-size: .75em;
+    vertical-align:middle;
 }
 
 a:visited .cat1{
