@@ -240,13 +240,13 @@ a:visited .cat1 h2{
     display:flex;
     flex-wrap: wrap;
     max-width: 700px;
-    height: 200px;
 }
 
 .contentImg img{
     display:block;
     margin:auto;
     padding:5px 10px;
+    height: 250px;
 }
 
 .contentTitle, 
