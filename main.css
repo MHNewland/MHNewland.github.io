@@ -240,6 +240,7 @@ a:visited .cat1 h2{
     display:flex;
     flex-wrap: wrap;
     max-width: 700px;
+    height: 200px;
 }
 
 .contentImg img{
